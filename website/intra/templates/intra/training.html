@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> intraView </title>
+
+    {% load static from staticfiles %}
+    <!-- Bootstrap -->
+    <link href= "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'basic_temp.css' %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#181818;">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="opacity: 0.95;">
+        <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
+                    <span class="sr-only">Show and Hide the navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+              <a class="navbar-brand"  style="font-family:'Satisfy'; font-size:28px;">intraView</a>
+            <div class="collapse navbar-collapse" id="navbar-cont">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li ><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'about' %}"> About us</a></li>
+                     <li class="active"><a href="{% url 'training' %}">Trainings</a></li>
+                     <li><a href="{% url 'faq' %}"> FAQs</a></li>
+                    <li><a href="{% url 'register' %}"> Registration</a></li>
+                     <li><a href="{% url 'contact' %}">Contact us</a></li>
+                </ul>              
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+<div class="container" >
+    <div class="row" style="margin-left: auto;margin-right: auto;display: block;" >
+        <div class="col-sm-4">
+ <img src="{% static 'a4.jpg' %}" style="max-width:100%;max-height:100%;" >
+
+
+        </div>
+        <div class="col-sm-4">
+ <img src="{% static 'a4.jpg' %}" style="max-width:100%;max-height:100%;" >
+
+        </div>
+        <div class="col-sm-4">
+ <img src="{% static 'a4.jpg' %}" style="max-width:100%;max-height:100%;"  >
+
+        </div>
+</div>
+</div>
+ <br><br>  
+<div style="background-color: black;">
+    <br><br>
+<div class="container" >
+    <h1 style="color: #5DADE2; text-align: center;"><b>PUBLIC TRAININGS - CLASSROOM MODEL</b></h1>
+    <br>
+    <h2 style="color: #5DADE2;margin: 15px;">Foundation Level</h2>
+        <p style="color: gray; font-size: 18px; margin: 15px;">Ideal for individuals who love to question the status quo, and in effort, want to be more methodical in their approach. People at this level serve as team members and lead small scale projects within the organization.</p> <br>
+    <div class="row">
+        <div class="col-md-5">
+            <h3 style="color: whitesmoke;margin: 15px;">Six Sigma Green Belt</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">For more than three decades Six Sigma has played a vital role in the central business strategies of leading global players across industries. This is your first step towards getting started on an exciting journey which is evergreen and always seeking the right talent.<br>
+            Our Green Belt program covers 36 hours of classroom training and total of 20 hours dedicated towards pre-course work and project work.</p>
+        
+        </div>
+        <div class="col-md-1">
+        </div>
+         <div class="col-md-5">
+             <h3 style="color: whitesmoke;margin: 15px;">Analytics Starter</h3>
+                            <p style="color: gray; font-size: 18px; margin: 15px;">Availability of large amount of data around the smallest of activities has created opportunities that never existed earlier. Now the companies are not just competing on revenue, they are competing on their ability to gather data, and to draw meaningful insights from it. Therefore, they hire experts who can help in this endeavor.<br>
+            Total program duration is 60 hours which covers 32 hours of classroom training + 28 hours of reinforcement through mentor led sessions and self learning.</p>
+         </div>
+          <div class="col-md-1">
+         </div>
+    </div>  
+    <hr><br>
+
+    <h2 style="color: #5DADE2;margin: 15px;">Advanced Level</h2>
+        <p style="color: gray; font-size: 18px; margin: 15px;">Building further on the strong foundation, this level brings newer depth and dimensions of expertise in the area of Six Sigma and Analytics. Here you learn to lead projects all by yourself, you become a change agent for your organization.</p> <br>
+    <div class="row">
+        <div class="col-md-5">
+            <h3 style="color: whitesmoke;margin: 15px;">Six Sigma Black Belt</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Black Belts are pretty much self-sufficient and motivated individuals who have a strong bent towards driving breakthrough improvements. These individuals lead from the front and carry a chain reaction throughout the organization.<br>
+Our Black Belt program covers 60 hours of classroom contact and another 80 hours allocated to pre, break and post session practice through video lectures, exercises and project work. The 60 hours of classroom contact is divided into two parts over a period of two months.</p>
+        
+        </div>
+        <div class="col-md-1">
+        </div>
+         <div class="col-md-5">
+             <h3 style="color: whitesmoke;margin: 15px;">Analytics Pro</h3>
+                            <p style="color: gray; font-size: 18px; margin: 15px;">At this level you learn to handle large amount of data with ease. You learn advanced machine learning and predictive modeling techniques to be able to come up with right recommendations for your organization in order to save millions of dollars.<br>
+This program covers 108 hours of classroom contact over a period of six months + 32 hours reinforcement through mentor led  sessions and self learning. Between the contact sessions there are practice exercises and assignments.</p>
+         </div>
+          <div class="col-md-1">
+         </div>
+    </div>     
+</div><br><br>
+</div>
+<br><br>               
+<div class="container">
+    <br>
+    <h3 style="color: whitesmoke;margin: 15px;">Subscribe to our YouTube Channel to continue receiving updates.</h3>
+    <br>
+    <iframe width="100%" height="500"
+      src="https://www.youtube.com/embed/Y6LUJ_xedgo">embed/
+     </iframe>
+    
+</div>    
+<br><br><br><br>         
+<footer class="container-fluid">
+<div class="container" style="text-align: center;">
+    <h4 style="color: white"> Copyright 2018. All Rights Reserved.</h4>
+    <hr width="5%" style="color: darkgray;">
+    <h4 style="color: grey"> Get started Today! sunil.arora@intraview.in</h4>
+</div>
+</footer>
+<br><br>    
+</body>
+<script>
+
+    </script>     
+</html>

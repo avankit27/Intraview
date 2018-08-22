@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> intraView </title>
+
+    {% load static from staticfiles %}
+    <!-- Bootstrap -->
+    <link href= "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'basic_temp.css' %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body >
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="opacity: 0.95;">
+        <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
+                    <span class="sr-only">Show and Hide the navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+              <a class="navbar-brand"  style="font-family:'Satisfy'; font-size:28px;">intraView</a>
+            <div class="collapse navbar-collapse" id="navbar-cont">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                     <li><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'about' %}"> About us</a></li>
+                     <li><a href="{% url 'training' %}">Trainings</a></li>
+                     <li><a href="{% url 'faq' %}"> FAQs</a></li>
+                     <li><a href="{% url 'register' %}"> Registration</a></li>
+                     <li class="active"><a href="{% url 'contact' %}">Contact us</a></li>
+                </ul>              
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+<div style="background-color: white;" >
+        <div class="container" >
+    <br>
+        <h1 style="color:#484848;text-align: center;"><b>CONTACT US</b></h1>
+            <h3 style="text-align: center;">Please call or leave a short message below, we will get back.</h3>
+    <br>
+            <form method="post" action="{% url 'contact' %}">
+                {% csrf_token %}
+                 <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Name" id="name" name="name" value="" style="background-color:#F0F0F0; border-radius:0;"/>
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                
+                 <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Contact Number" id="number" name="number" value=""  style="background-color:#F0F0F0; border-radius:0;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                
+                <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="email" required class="form-control" placeholder="Email Address" id="email" name="email" value="" style="background-color:#F0F0F0; border-radius:0;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                
+                <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea required class="form-control" placeholder="Message" rows="8" cols="50" id="message" name="message" value="" style="background-color:#F0F0F0; border-radius:0;"></textarea>
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                <div class="row">
+                        <div class="form-group">
+                              <button type="submit" value="Submitt" style="width:130px;height: 45px; background-color:#285776; color: whitesmoke;  padding: 10px; margin-left: auto;margin-right: auto;display: block;">
+                                    <b>SEND</b>
+                               </button>
+                        </div>
+
+				 </div>
+            </form>
+        <br>
+            <div style="text-align: center;">
+                <h3>SixSigma Pro SMART</h3><br>
+                    <p style="color:#606060;">#709, EWS, ESSEL Towers, Near IFFCO Chowk Metro Station, Sector-28, Gurugram -122001</p>
+                        <p style="color:#606060;">080-67710650 (9 am to 6 pm Mon-Fri), +91 9356286603 (Any time)</p>
+            </div>
+        </div> 
+    <br><br>
+</div> 
+    
+<br>
+<footer class="container-fluid" style="background-color:#181818;">
+    <br><br>
+<div class="container" style="text-align: center;">
+    <h4 style="color: white"> Copyright 2018. All Rights Reserved.</h4>
+    <hr width="5%" style="color: darkgray;">
+    <h4 style="color: grey">Get started Today! sunil.arora@intraview.in </h4>
+</div>
+    <br><br>
+</footer>
+   
+</body>
+<script>
+
+    </script>     
+</html>

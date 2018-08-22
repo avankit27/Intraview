@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> intraView </title>
+
+    {% load static from staticfiles %}
+    <!-- Bootstrap -->
+    <link href= "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'basic_temp.css' %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#181818;">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="opacity: 0.95;">
+        <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
+                    <span class="sr-only">Show and Hide the navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+              <a class="navbar-brand"  style="font-family:'Satisfy'; font-size:28px;">intraView</a>
+            <div class="collapse navbar-collapse" id="navbar-cont">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                     <li><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'about' %}"> About us</a></li>
+                     <li><a href="{% url 'training' %}">Trainings</a></li>
+                     <li class="active"><a href="{% url 'faq' %}"> FAQs</a></li>
+                     <li><a href="{% url 'register' %}"> Registration</a></li>
+                     <li><a href="{% url 'contact' %}">Contact us</a></li>
+                </ul>      
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br> 
+<div class="container" >
+    <h1 style="color: #5DADE2; text-align: center;"><b>QUESTIONS ON YOUR MIND?</b></h1>
+    <br>
+    <div class="row">
+         <div class="col-md-4">
+             <br>
+             <img src="{% static 'faq.jpg' %}" style="max-width:100%;max-height:100%;" >
+         </div> 
+        <div class="col-md-8">
+            <h3 style="color: whitesmoke;margin: 15px;">What is Six Sigma?</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Six Sigma is a problem solving methodology which is centered around defect reduction and variation management; executed in the form of a disciplined, data driven and time-bound project.  </p>
+            <br>
+            <h3 style="color: whitesmoke;margin: 15px;">What is Analytics?</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Analytics is the science of using data to build models that lead to better decisions that add value to individuals, to companies, to institutions.  </p>
+            <br>
+            <h3 style="color: whitesmoke;margin: 15px;">How does it help me?</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Irrespective of whether you are an employee or you are self-employed, what you will always have in front you will be your Goals. The more efficiently you proceed towards achieving these goals, the more you succeed in your career. </p>
+            <br>
+            <h3 style="color: whitesmoke;margin: 15px;">I never heard about it? Is this only popular in the West?</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Analytics is the science of using data to build models that lead to better decisions that add value to individuals, to companies, to institutions.  </p>
+            <br>
+            <h3 style="color: whitesmoke;margin: 15px;">I am a fresher/mid-level manager/senior manager, is this equally relevant for me?</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Absolutely, Six Sigma is a top-down approach which requires involvement at all levels. Which is why even people with less experience get to work on projects that are closely monitored by the Top Management.<br>The top guys are not any less fascinated by these credentials. In fact, it is common to read a line on Six Sigma qualification(s) when a VP's or Director's introduction is published.<br>
+            The sooner you start the better it is!
+            </p>
+        </div>
+</div>   
+</div><br><br>
+    <div style="background-color: black;">
+        <div class="container">
+            <br><br>
+            <h2 style="text-align: center; color: white;"><b>CSSC ACCREDITED TRAINING PROVIDER </b></h2> 
+                <br>
+                    <button name="sch" id="sch" class="btn btn-default" style="background-color: cornflowerblue; color: whitesmoke;border-radius:0; padding: 10px 40px 10px 40px; margin-left: auto;margin-right: auto;display: block;" ><b>FIND OUT MORE </b></button>
+            <br><br>
+        </div>
+    </div>
+  
+<br><br><br>         
+<footer class="container-fluid">
+<div class="container" style="text-align: center;">
+    <h4 style="color: white"> Copyright 2018. All Rights Reserved.</h4>
+    <hr width="5%" style="color: darkgray;">
+    <h4 style="color: grey"> Get started Today! sunil.arora@intraview.in</h4>
+</div>
+</footer>
+<br><br>    
+</body>
+<script>
+    <div class="row">
+         <div class="col-md-4">
+             <img src="img/faq.jpg">
+         </div> 
+        <div class="col-md-8">
+            <h3 style="color: whitesmoke;margin: 15px;">What is Six Sigma?</h3>
+            <p style="color: gray; font-size: 18px; margin: 15px;">Six Sigma is a problem solving methodology which is centered around defect reduction and variation management; executed in the form of a disciplined, data driven and time-bound project.  </p>
+        
+        </div>
+</div>
+    </script>     
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> intraView </title>
+
+    {% load static from staticfiles %}
+    <!-- Bootstrap -->
+    <link href= "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'basic_temp.css' %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#181818;">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="opacity: 0.95;">
+        <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
+                    <span class="sr-only">Show and Hide the navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+              <a class="navbar-brand"  style="font-family:'Satisfy'; font-size:28px;">intraView</a>
+            <div class="collapse navbar-collapse" id="navbar-cont">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'about' %}"> About us</a></li>
+                     <li><a href="{% url 'training' %}">Trainings</a></li>
+                     <li><a href="{% url 'faq' %}"> FAQs</a></li>
+                    <li class="active"><a href="{% url 'register' %}"> Registration</a></li>
+                     <li><a href="{% url 'contact' %}">Contact us</a></li>
+                </ul>              
+            </div>
+        </div>
+    </nav>
+    <br><br>
+<div style="background-color:black;">
+        <div class="container" >
+            <br><br>
+        <h2 style="color:#484848;text-align: center;color: white;">Request a callback</h2>
+    <br>
+            <form method="post" action="{% url 'register' %}">
+                {% csrf_token %}
+                 <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Name" id="name" name="name" value=""      style="background-color:#383838; border-radius:0;color: whitesmoke;"/>
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                
+                 <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Contact Number" id="number" name="number" value=""  style="background-color:#383838; border-radius:0; color: whitesmoke;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                
+                <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="email" required class="form-control" placeholder="Email" id="email" name="email" value="" style="background-color:#383838; border-radius:0;color: whitesmoke;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                
+                <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Program you are interested in" id="program" name="program" value="" style="background-color:#383838; border-radius:0;color: whitesmoke;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Company Name" id="company" name="company" value="" style="background-color:#383838; border-radius:0;color: whitesmoke;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                <div class="row">
+                     <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                            <input type="text" required class="form-control" placeholder="Location" id="loc" name="loc" value="" style="background-color:#383838; border-radius:0;color: whitesmoke;" />
+                        </div>
+                         </div>
+                     <div class="col-md-3"></div>
+				 </div>
+                <div class="row">
+                        <div class="form-group">
+                              <button type="submit" value="Submitt"  style="width:130px;height: 45px; background-color:#285776; color: whitesmoke;  padding: 10px; margin-left: auto;margin-right: auto;display: block;">
+                                    <b>SEND</b>
+                               </button>
+                        </div>
+
+				 </div>
+            </form>
+        <br>
+        </div> 
+    <br><br>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"> </div>
+        <div class="col-md-8">
+            <h3 style="text-align: center;color: white;">Terms & Conditions</h3><br>
+                <ul style="color: #707070;font-size: 17px;">
+                    <li><p>For all our classroom programs, in order to obtain the certificate/certification participant's attendance is mandatory for the entire program duration. </p></li>
+                    <li><p>Registration fee once paid will not  be refundable/adjustable/transferable in any form. </p></li>
+                    <li><p>We offer multiple courses please ensure you identify the right course that best fits your skill set. While our counselors will assist you, the final responsibility of choosing the right course totally relies on you.</p></li>
+                    <li><p>For certain hands-on courses participants are required to bring  their own laptop with mobile internet or dongle connection. Please read all instructions provided in the pre-course communication carefully. </p></li>
+                    <li><p>The  dates, times and venues advertised are provisional but we will use  reasonable endeavours to adhere to these. However, for circumstances  beyond our reasonable control in the event of a change or cancellation  we will make reasonable endeavours to notify you and offer you an  alternative. If you do not accept an alternative we shall refund fees  paid for the original booking and you agree that we shall incur no  further liability whatsoever as a result of the cancellation.</p></li>
+                </ul>
+        
+        </div>
+        <div class="col-md-2"> </div>
+    </div>
+    <br><br>
+</div>    
+    
+<div style="background-color:black;">
+ <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"> </div>
+        <div class="col-md-8">
+            <h3 style="text-align: center;color: white;">Privacy Policy</h3><br>
+                <ul style="color: #707070;font-size: 17px;">
+                    <li><p>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website. </p></li>
+                    
+                    <li><p>What personal information do we collect from the people that visit our blog, website or app? When ordering or registering on our site, as appropriate, you may be asked to enter your Name, Email Address, Phone Number, Employer’s/Company’s Name or other details to help you with your experience.
+                    </p></li>
+                    
+                    <li><p>When do we collect information? We collect information from you when you fill out a form or enter information on our site.</p></li>
+                    
+                    <li><p>How do we use your information? We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features to follow up with them after correspondence (live chat, email or phone inquiries)
+                    </p></li>
+                    
+                    <li><p>How do we protect your information? An external PCI compliant payment gateway handles all CC transactions. We use regular Malware Scanning. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We implement a variety of security measures when a user enters, submits, or accesses their information to maintain the safety of your personal information. All transactions are processed through a gateway provider and are not stored or processed on our servers.</p></li>
+                    
+                </ul>
+        
+        </div>
+        <div class="col-md-2"> </div>
+    </div>
+</div>
+<br><br>    
+</div>
+    
+<br>
+<footer class="container-fluid">
+<div class="container" style="text-align: center;">
+    <h4 style="color: white"> Copyright 2018. All Rights Reserved.</h4>
+    <hr width="5%" style="color: darkgray;">
+    <h4 style="color: grey"> Get started Today! sunil.arora@intraview.in</h4>
+</div>
+</footer>
+   
+</body>
+<script>
+
+    </script>     
+</html>

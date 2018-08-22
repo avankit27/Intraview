@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> intraView </title>
+
+    {% load static from staticfiles %}
+    <!-- Bootstrap -->
+    <link href= "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'basic_temp.css' %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:#181818;">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="opacity: 0.95;">
+        <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
+                    <span class="sr-only">Show and Hide the navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+              <a class="navbar-brand"  style="font-family:'Satisfy'; font-size:28px;">intraView</a> 
+            <div class="collapse navbar-collapse" id="navbar-cont">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                     <li class="active"><a href="{% url 'about' %}"> About us</a></li>
+                     <li><a href="{% url 'training' %}">Trainings</a></li>
+                     <li><a href="{% url 'faq' %}"> FAQs</a></li>
+                    <li><a href="{% url 'register' %}"> Registration</a></li>
+                     <li><a href="{% url 'contact' %}">Contact us</a></li>
+                </ul>        
+            </div>
+        </div>
+    </nav>
+    <br><br>
+<div class="container">
+    <br><br><br>
+    <h1 style="text-align: center; color:#5DADE2; "><b> ABOUT US </b></h1>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <br>
+                <img src="{% static '12.jpg' %}" style="width: 300px; height: 400px; margin-left:auto; margin-right:auto;display: block;">
+         </div>
+        <div class="col-md-8">
+            <h2 style="color: whitesmoke;">Academic Mentor & Senior Faculty - Advanced Analytics</h2>      
+            <h2 style="color: whitesmoke;">Dr. Hemant K. Tiwari</h2><br>
+            <p style="color: gray; font-size: 17px;">Dr. Tiwari is a renowned statistician. He carries more than 36 years of experience in the field of advanced research and education. Currently serving in the capacity of Director, Biostatistics Pre-Doctoral NHLBI Training Program & Director, Post-Doctoral NHLBI Training Program in Statistical Genetics at the University of Alabama.<br>
+                
+            Dr. Tiwari received his Ph.D. in mathematics from the University of Notre Dame, South Bend, Indiana. While being a faculty at the University of Maine, he got interested in statistical genetics, and completed a post-doctoral fellowship in Statistical Genetics. His current research interests include  Genetic Linkage Analysis, Disequilibrium Mapping, Genome-Wide Association Studies, Copy number variations (CNVs) Structural variations  (SV), Epigenetics, Pharmacogenetics/ Pharmacogenomics, Gene expression,  Exome sequencing, Pathway and network analysis, Bioinformatics,  Metabolomics, and Population Genetics. He has extensive record of  productive collaborations in searching for genes for obesity, diabetes, cardiovascular diseases, Rheumatoid Arthritis, SLE, Stroke, Cancer, and  Multiple Sclerosis, to name few. 
+            </p>
+        </div>
+    </div>
+    <br><br>
+        <div class="row">
+        <div class="col-md-4">
+            <br>
+                <img src="{% static '13.jpg' %}" style="width: 300px; height: 400px; margin-left:auto; margin-right:auto;display: block;">
+         </div>
+        <div class="col-md-8">
+            <h2 style="color: whitesmoke;">Senior Faculty - ISO Consultant, ZED Master Trainer & Assessor</h2>      
+            <h2 style="color: whitesmoke;">Shailender Kumar Bhandari</h2><br>
+            <p style="color: gray;font-size: 17px;">Shailender Kumar Bhandari holds more than four decades of industry experience and has recently retired from a very active senior position in world's largest fertilizer complex. Mr. Bhandari is an expert in Ammonia process and especially in the field of catalysts and Chemicals. He has  extensive experience of startup/commissioning of all kinds of catalysts in Ammonia, Methanol, Urea and UFC85 processes. He has also co-authored and presented papers in International Conferences.<br>
+                
+A Science graduate and a Chemical Engineer, he is a professionally  certified Lead Auditor in ISO 9000:2015. He is also trained/certified  in ISO14001, RC 14001, OHSAH 18001, Process Safety Management, Energy  Audits of large complex Ammonia Plants, HAZOP, SIL, and an expert in implementation and internal Auditing with more than 18 years in all the standards mentioned. Mr. Bhandari has also acquired Master Trainer and  Assessor competence in Zero Defect and Zero Effect program launched by Government  of India through Quality Council of India (QCI). 
+            </p>
+        </div>
+    </div>
+    <br><br>
+    
+        <div class="row">
+        <div class="col-md-4">
+            <br>
+                <img src="{% static '14.jpg' %}" style="width: 300px; height: 400px; margin-left:auto; margin-right:auto;display: block;">
+         </div>
+        <div class="col-md-8">
+            <h2 style="color: whitesmoke;">Senior Faculty - Lean Six Sigma</h2>      
+            <h2 style="color: whitesmoke;">TS Chokkalingam</h2><br>
+            <p style="color: gray;font-size: 17px;">Chokkalingam holds an MS degree in Manufacturing Systems Engineering from University of Warwick, United Kingdom and B.E. Mechanical Engineering from NIT, Trichy. He is a manufacturing professional with 20 years of experience in Quality Assurance, Engineering & Quality Control, and Production with reputed automotive companies in the country. He is a certified Six Sigma Master Black Belt with expertise in Lean Manufacturing, TPM, TQM and implementation of Quality Management System. <br>
+                
+He has hands on experience in Six sigma deployment, TPM and Lean initiatives in automotive manufacturing. He has mentored various Six sigma projects including Customer Complaints reduction, Warranty Claims reduction, Process Rework reduction, Process Capability improvement and Manufacturing Cost reduction. He is experienced in implementing Productivity Improvement Projects using Lean concepts. His expertise areas also include New Product Quality planning, establishing the process for mass production with minimum variation, and mass production Quality control in Automotive components manufacturing and Automotive assembly operations. 
+            </p>
+        </div>
+    </div>
+    <br><br>
+    
+        <div class="row">
+        <div class="col-md-4">
+            <br>
+                <img src="{% static '15.jpg' %}" style="width: 300px; height: 400px; margin-left:auto; margin-right:auto;display: block;">
+         </div>
+        <div class="col-md-8">
+            <h2 style="color: whitesmoke;">Faculty - Advanced Analytics</h2>      
+            <h2 style="color: whitesmoke;">Sachin Punyani</h2><br>
+            <p style="color: gray;font-size: 17px;">Sachin Punyani has more than 13 years of industry experience in developing and architecting Large Scale Business Applications and High Performance Solutions for Smart Cities, Transportation and Telecom. He has led the implementation of Business Intelligence(BI) & Analytics solutions, and has proven expertise to lead projects involving system integration of BI and Analytics solutions with the enterprise Applications.<br>
+                
+Sachin's experience extends further in the area of building, tuning and testing high value Prediction Models, using most advanced statistical, data mining and ensemble modeling approaches. He has successfully blended his technical expertise in the Big Data arena with his knowledge of various domains to define and automate KPI driven Business Processes. <br>
+                Sachin has been associated with some of the top Academic Institutions while regularly conducting sessions on Advanced Statistics, Machine Learning and Predictive Modeling Techniques.  
+He holds a Masters in Computer Applications from Bharati Vidyapeeth and MS from BITS, Pilani. His other credentials include certifications in Enterprise Architecture, Cloud Architecture & Big Data Operations. He also holds a Post Graduation in Business Analytics.
+            </p>
+        </div>
+    </div>
+    <br><br>
+</div>
+       
+<br><br>    
+<footer class="container-fluid">
+<div class="container" style="text-align: center;">
+    <h4 style="color: white"> Copyright 2018. All Rights Reserved.</h4>
+    <hr width="5%" style="color: darkgray;">
+    <h4 style="color: grey"> Get started Today! sunil.arora@intraview.in</h4>
+</div>
+</footer>
+<br><br>    
+</body>
+<script>
+
+    </script>     
+</html>

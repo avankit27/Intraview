@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> intraView </title>
+    {% load static from staticfiles %}
+
+    <!-- Bootstrap -->
+    <link href= "//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'basic_temp.css' %}">
+
+     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+.ft{
+     background-image: url('{% static "11.jpg" %}');
+     height: auto;
+}
+        
+.ftt{
+     background-image: url('{% static "11.jpg" %}');
+     height: auto;
+}
+    </style>    
+</head>
+<body style="background-color:#181818;">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation" style="opacity: 0.95;">
+        <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-cont">
+                    <span class="sr-only">Show and Hide the navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            
+              <a class="navbar-brand"  style="font-family:'Satisfy'; font-size:28px;">intraView</a>
+            <div class="collapse navbar-collapse" id="navbar-cont">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                     <li><a href="{% url 'about' %}"> About us</a></li>
+                     <li><a href="{% url 'training' %}">Trainings</a></li>
+                     <li><a href="{% url 'faq' %}"> FAQs</a></li>
+                    <li><a href="{% url 'register' %}"> Registration</a></li>
+                     <li><a href="{% url 'contact' %}">Contact us</a></li>
+                </ul>          
+            </div>
+        </div>
+    </nav>
+    
+        <div class="" style="">
+            <img style="max-width: 100%; max-height: 100%;" src="{% static 'banner.jpg' %}">
+
+        </div>
+    <br><br><br>
+
+    
+<div class="container" >     
+     <div  class="row">
+         <div class="col-md-4">
+             <div class="media" style="margin-top: 20px;">
+             <img src="{% static '1.jpg' %}" class="img-circle" style="width: 220px; height: 220px; margin-left:auto; margin-right:auto;display: block;">
+             
+            
+             <div class="media-body">
+                 <h3 style="text-align: center;color:whitesmoke;">Curriculum Development</h3> 
+                 <p style="text-align: center;color:gray;font-size:18px; margin-top: 20px;">We partner with Institutes willing to upgrade their existing curriculum by incorporating the elements of Business Analytics.</p>
+                 </div>
+                 </div> 
+         </div>
+         
+        <div class="col-md-4">
+            <div class="media" style="margin-top: 20px;">
+             <img src="{% static '2.jpg' %}" class="img-circle" style="width: 220px; height: 220px; margin-left:auto; margin-right:auto;display: block;">
+             
+            
+             <div class="media-body">
+                 <h3 style="text-align: center;color:whitesmoke;">Corporate Trainings</h3> 
+                 <p style="text-align: center;color:gray;font-size:18px; margin-top: 20px;">Want a bespoke training designed and delivered for your employees?<br>
+                 Get in touch with our experts.</p>
+                 </div>
+                 </div> 
+         </div>
+         
+        <div class="col-md-4">
+            <div class="media" style="margin-top: 20px;">
+              <img src="{% static '3.jpg' %}" class="img-circle" style="width: 220px; height: 220px; margin-left:auto; margin-right:auto;display: block;">
+             
+            
+             <div class="media-body">
+                 <h3 style="text-align: center;color:whitesmoke;">Public Trainings</h3> 
+                 <p style="text-align: center;color:gray;font-size:18px; margin-top: 20px;">Our unique blended trainings help individuals who aspire to make it big in the corporate world. </p>
+                 </div>
+                 </div> 
+         </div>
+        </div>          
+</div>
+    <br><br>
+ 
+<div class="ft">
+    <br><br>
+    <div class="container">
+    <h2 style="text-align: center; color: white;"><b>CSSC ACCREDITED TRAINING PROVIDER </b></h2>
+    </div>
+    <br><br>
+</div> 
+    <br><br><br>
+    
+    <div>
+      <h1 style="text-align: center; color: white;"><b>WHY INTRAVIEW?</b></h1>
+    </div>  <br>
+    
+<div class="container" >
+        
+     <div  class="row">
+         <div class="col-sm-4">
+             <div class="media" style="margin-top: 20px;">
+             <img src="{% static '4.jpg' %}" class="img-circle" style="width: 220px; height: 220px; margin-left:auto; margin-right:auto;display: block;">
+             
+            
+             <div class="media-body">
+                 <h3 style="text-align: center;color:whitesmoke;">Be an Achiever</h3> 
+                 <p style="text-align: center;color:gray;font-size:18px; margin-top: 20px;">While Six Sigma is amongst one of the top skills which has been in demand for over three decades now, With the increase in digital trace Analytics is the hottest skill of the millennium. Proper credentials in these areas enable you and your organization to grab better opportunities compared to the competitors. <br><br>
+                 Our highly qualified faculty with 15+ years of industry experience, having worked with some top notch companies will handhold you as you take your first step.  </p> 
+                 </div>
+                 </div> 
+         </div>
+         
+        <div class="col-sm-4">
+            <div class="media" style="margin-top: 20px;">
+             <img src="{% static '5.jpg' %}" class="img-circle" style="width: 220px; height: 220px; margin-left:auto; margin-right:auto;display: block;">
+             
+            
+             <div class="media-body">
+                 <h3 style="text-align: center;color:whitesmoke;">Increase your employability</h3> 
+                 <p style="text-align: center;color:gray;font-size:18px; margin-top: 20px;">Nearly 75% of the Fortune 500 companies across the globe have implemented Six Sigma and reported its benefits. You can pick top brands in any sector from FMCG to BFSI, Telcom to IT, Healthcare or more, you will realize that they all appoint Six Sigma Professionals.<br><br>
+                     
+                 Analytics has brought companies much closer to their customers than ever. Knowledge of advanced machine learning and AI techniques will take your game to the next level.</p>
+                 </div>
+                 </div> 
+         </div>
+         
+        <div class="col-sm-4">
+            <div class="media" style="margin-top: 20px;">
+              <img src="{% static '6.jpg' %}" class="img-circle" style="width: 220px; height: 220px; margin-left:auto; margin-right:auto;display: block;">
+             
+            
+             <div class="media-body">
+                 <h3 style="text-align: center;color:whitesmoke;">Within your reach</h3> 
+                 <p style="text-align: center;color:gray;font-size:18px; margin-top: 20px;">Six Sigma and Analytics have been exclusive trainings which are either available only at some top conglomerates or there are very limited public programs conducted by some consulting firms but there is a clear gap when it comes to the quality of delivery.<br><br>
+                     
+                 With our unique programs you can build your capability in the areas of Six Sigma and Analytics with best hands-on experience through classroom learning. Also, in most cases since our programs are scheduled over weekends, you don't need to seek too many leaves from work.
+                 </p>
+                 </div>
+                 </div> 
+         </div>
+        </div>          
+</div>
+    <br> <br>  
+    
+<div class="ftt">  
+    <div class="container">
+        <div class="row">
+            <br><br>
+            <div class="col-sm-9">
+    <h1 style="color: white;"><b>PUBLIC TRAINING PROGRAMS</b></h1>
+            </div>
+            <div class="col-sm-3">
+    <button name="sch" id="sch" class="btn btn-default" style="background-color: cornflowerblue; color: #f5f5f5; border-radius:0; padding: 10px 40px 10px 40px; margin: 10px;" >FIND OUT MORE</button>
+            </div>
+            
+        </div>
+         
+    </div>
+     <br><br>
+</div> 
+    <br><br><br>  
+<div>
+      <h1 style="text-align: center; color: white;"><b>TESTIMONIALS</b></h1>
+    </div>  
+    <br><br>
+<div class="container">
+         <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+           <ol class="carousel-indicators">
+               <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#mycarousel" data-slide-to="1"></li>
+               <li data-target="#mycarousel" data-slide-to="2"></li>
+               <li data-target="#mycarousel" data-slide-to="3"></li>
+               <li data-target="#mycarousel" data-slide-to="4"></li>
+               <li data-target="#mycarousel" data-slide-to="5"></li>
+               <li data-target="#mycarousel" data-slide-to="6"></li>
+           </ol>
+           <div class="carousel-inner">
+               <div class="item active">
+                   <img src="{% static 'b1.jpg' %}" />
+               </div>
+               <div class="item">
+                   <img src="{% static 'b2.jpg' %}" />
+               </div>
+               <div class="item">
+                   <img src="{% static 'b3.jpg' %}" />
+               </div>
+               <div class="item">
+                   <img src="{% static 'b4.jpg' %}" />
+               </div>
+                <div class="item">
+                   <img src="{% static 'b5.jpg' %}" />
+               </div>
+                <div class="item">
+                   <img src="{% static 'b6.jpg' %}" />
+               </div>
+                <div class="item">
+                   <img src="{% static 'b7.jpg' %}" />
+               </div>
+
+           </div>
+           <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+
+           </a>
+           <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+
+           </a>
+       </div>  
+</div>    
+ <br><br>   
+<div class="jumbotron" style="background-color: black;">
+    <div class="container" style="text-align: center;">
+    <button type="button" class="btn btn-default btn-circle" style="  margin:auto;"> <a href="https://en-gb.facebook.com/login/">  <i class="fa fa-facebook" style="color: black;" ></i></a></button>
+     <button type="button" class="btn btn-default btn-circle" style=" margin-left: 35px; "><a href="https://www.youtube.com/">  <i class="fa fa-youtube-play" style="color: black;" ></i></a></button>
+     </div>
+</div>
+    
+<footer class="container-fluid">
+<div class="container" style="text-align: center;">
+    <h4 style="color: white"> Copyright 2018. All Rights Reserved.</h4>
+    <hr width="5%" style="color: darkgray;">
+    <h4 style="color: grey"> Get started Today! sunil.arora@intraview.in</h4>
+</div>
+</footer>
+<br><br>    
+</body>
+<script>
+
+    </script>     
+</html>
